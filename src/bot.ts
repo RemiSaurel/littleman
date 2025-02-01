@@ -1,11 +1,11 @@
 import "dotenv/config";
 import { Client, GatewayIntentBits, EmbedBuilder, TextChannel } from "discord.js";
-import { registerCommands } from "./command-register.ts";
-import { getDefaultCriteria, searchCommand } from "./commands/search.ts";
-import { infoCommand } from "./commands/info.ts";
-import { queryCommand } from "./commands/query.ts";
-import { fetchArxivPapers } from "./arxiv.ts";
-import { Paper } from "./models.ts";
+import { registerCommands } from "./command-register.js";
+import { getDefaultCriteria, searchCommand } from "./commands/search.js";
+import { infoCommand } from "./commands/info.js";
+import { queryCommand } from "./commands/query.js";
+import { fetchArxivPapers } from "./arxiv.js";
+import { Paper } from "./models.js";
 import { CronJob } from "cron";
 
 const TOKEN = process.env.DISCORD_TOKEN;

@@ -1,7 +1,7 @@
 import { CommandInteraction, EmbedBuilder } from "discord.js";
-import { fetchArxivPapers } from "../arxiv.ts";
+import { fetchArxivPapers } from "../arxiv.js";
 import { promises as fs } from "fs";
-import { Paper } from "../models.ts";
+import { Paper } from "../models.js";
 
 export async function searchCommand(interaction: CommandInteraction) {
     let defaultCriteria = await getDefaultCriteria();

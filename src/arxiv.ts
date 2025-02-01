@@ -1,5 +1,5 @@
 import ky from "ky";
-import { Paper } from "./models.ts";
+import { Paper } from "./models.js";
 
 let BASE_URL = "http://export.arxiv.org/api/query";
 

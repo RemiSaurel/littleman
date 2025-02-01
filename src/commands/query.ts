@@ -1,6 +1,6 @@
 import { CommandInteraction, EmbedBuilder } from "discord.js";
 import { promises as fs } from "fs";
-import { getDefaultCriteria } from "./search.ts";
+import { getDefaultCriteria } from "./search.js";
 
 export async function queryCommand(interaction: CommandInteraction) {
     let defaultCriteria = await getDefaultCriteria();

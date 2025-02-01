@@ -5,9 +5,10 @@
     "moduleResolution": "NodeNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false,  // Change from true to false
+    "outDir": "./dist", // Add an output directory for the compiled files
     "strict": true
   },
   "include": ["src"]

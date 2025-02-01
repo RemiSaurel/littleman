@@ -1,7 +1,7 @@
 {
-  "name": "arxi",
+  "name": "littleman",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "start": "node --loader ts-node/esm src/bot.ts",
