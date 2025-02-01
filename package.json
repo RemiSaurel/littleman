@@ -1,0 +1,21 @@
+{
+  "name": "arxi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/bot.ts",
+    "dev": "nodemon --exec node --loader ts-node/esm src/bot.ts"
+  },
+  "dependencies": {
+    "cron": "^3.5.0",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.3.1",
+    "ky": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.6.2"
+  }
+}
