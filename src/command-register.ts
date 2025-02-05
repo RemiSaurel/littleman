@@ -14,7 +14,12 @@ export async function registerCommands(CLIENT_ID: string) {
             .addStringOption(option =>
                 option.setName("categories")
                     .setDescription("Comma-separated categories")
-                    .setRequired(false)),
+                    .setRequired(false))
+            .addIntegerOption(option =>
+                option.setName("max-results")
+                    .setDescription("Maximum number of results")
+                    .setRequired(false))
+        ,
         new SlashCommandBuilder()
             .setName("info")
             .setDescription("Get default search criteria for arXiv papers")

@@ -9,9 +9,10 @@ export async function searchCommand(interaction: CommandInteraction) {
     // Use default criteria if no options are provided
     const title = interaction.options.get("title")?.value?.toString() || defaultCriteria.title;
     const categories = interaction.options.get("categories")?.value?.toString().split(",") || defaultCriteria.categories;
+    const maxResults = interaction.options.get("max-results")?.value || 5;
 
     await interaction.reply("🔍 Searching arXiv...");
-    const papers = await fetchArxivPapers(title, categories);
+    const papers = await fetchArxivPapers(title, categories, Number(maxResults));
 
     if (papers.length === 0) {
         return interaction.editReply("No papers found for the given query.");
