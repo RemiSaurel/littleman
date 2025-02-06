@@ -71,7 +71,7 @@ const sendToChannel = async (embed: EmbedBuilder) => {
 // Function to fetch papers based on default criteria and send them to the channel
 const fetchAndSendPapers = async () => {
     const defaultCriteria = await getDefaultCriteria();
-    const papers = await fetchArxivPapers(defaultCriteria.title, defaultCriteria.categories, 10);
+    const papers = await fetchArxivPapers(defaultCriteria.title, defaultCriteria.categories);
 
     if (papers.length === 0) {
         console.log("No papers found.");
